@@ -1,4 +1,4 @@
-require "../solutions/tree_traversal_inorder"
+require "./tree_traversal_inorder"
 
 RSpec.describe "tree_traversal_inorder" do
   it "can handle an empty tree" do
