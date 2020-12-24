@@ -134,3 +134,5 @@ module.exports = {
  * other ways to solve this iteratively, such as putting the node in a set, which
  * I did in the Ruby version, but this is how I did it to shake things up a bit.
  * *************************************************************************/
+
+ // Big O for both solutions is O(n). Each node will be visited at least once.

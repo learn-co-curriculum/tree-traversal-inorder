@@ -135,3 +135,6 @@ end
  # node again, we'd go left all over again in an endless loop. I'm sure there are
  # other ways to solve this iteratively, but this is how I did it.
  # ##########################################################################
+
+
+ # Big O for both solutions is O(n). Each node will be visited at least once.

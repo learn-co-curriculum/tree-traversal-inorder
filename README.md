@@ -10,6 +10,8 @@ In-order tree traversal requires an algorithm that visits the left subtree first
 
 For this exercise, your function will be called with the root node of a BST. Your algorithm should return an array containing the nodes' values in sorted order. Note that your algorithm should not be calling sort! It should traverse the tree nodes in order and add each value to the array that will be returned as it travels through the tree.
 
+What is the time complexity of your solution?
+
 _Hint: It might help to add a default parameter if solving this recursively._
 
 ```
