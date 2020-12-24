@@ -20,17 +20,20 @@ def tree_traversal_inorder(root, result = [])
 end
 
 # Iterative solution
+# require 'set'
+
 # def tree_traversal_inorder(root)
 #   return [] if root.nil?
 #   queue = [root]
 #   result = []
+#   visited = Set.new
 
 #   until queue.empty?
 #     node = queue.first
 
-#     if !node.left.nil?
+#     if !node.left.nil? && !visited.include?(node)
 #       queue.unshift(node.left)
-#       node.left = nil
+#       visited.add(node)
 #       next
 #     end
 
@@ -100,13 +103,14 @@ end
  # return empty array if root is falsy
  # initialize queue with array containing root
  # initialize result to empty array
+ # initialize visited to new set
  # 
  # while queue contains nodes:
  #  node = first node in queue
  # 
- #  if node has left node:
- #    add node to beginning of queue
- #    set left to null
+ #  if node has left node and set does not contain node:
+ #    add left node to beginning of queue
+ #    add node to set
  #    continue with loop
  # 
  #  add node value to end of result
@@ -125,8 +129,8 @@ end
  # off of that node. Once we've done that we can push that value onto an array
  # and we can then start looking at the right nodes. We repeat this process of
  # always going as far to the left as possible before going right until there
- # are no nodes left to visit. For the iterative version, we remove the left node
- # to mark that we had already visited a node's left node to avoid an infinite 
+ # are no nodes left to visit. For the iterative version, we add the node to a
+ # set to mark that we had already visited a node's left node to avoid an infinite 
  # loop. Otherwise, if we visited a node's left node, then processed that same
  # node again, we'd go left all over again in an endless loop. I'm sure there are
  # other ways to solve this iteratively, but this is how I did it.

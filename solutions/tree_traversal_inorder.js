@@ -106,7 +106,7 @@ module.exports = {
  *  node = first node in queue
  * 
  *  if node has left node and not yet seen / done:
- *    add node to beginning of queue
+ *    add left node to beginning of queue
  *    add attribute done and set to true (to mark as visited)
  *    continue with loop
  * 
@@ -131,5 +131,6 @@ module.exports = {
  * to mark that we had already visited a node's left node to avoid an infinite 
  * loop. Otherwise, if we visited a node's left node, then processed that same
  * node again, we'd go left all over again in an endless loop. I'm sure there are
- * other ways to solve this iteratively, but this is how I did it.
+ * other ways to solve this iteratively, such as putting the node in a set, which
+ * I did in the Ruby version, but this is how I did it to shake things up a bit.
  * *************************************************************************/
