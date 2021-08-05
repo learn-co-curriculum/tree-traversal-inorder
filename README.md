@@ -2,7 +2,7 @@
 
 **Fork and then clone me!**
 
-![Binary search trees](./trees.png)
+![Binary search trees](https://curriculum-content.s3.amazonaws.com/data-structures-and-algorithms/tree-traversal-inorder/trees.png)
 
 In-order tree traversal requires an algorithm that visits the left subtree first followed by the root, and then the right subtree. When using in-order traversal with a binary search tree (BST), the value of each node will be output in order from least to greatest. For the left tree above the output would be: 3, 5, 6, 10, 12, 16. For the tree on the right: 5, 30, 60. This algorithm can be programmed recursively or iteratively.
 
@@ -20,7 +20,7 @@ _Hint: It might help to add a default parameter if solving this recursively._
   -10   20
 
 in_order_traversal(root)
-=> [-10, 2, 20] 
+=> [-10, 2, 20]
 ```
 
 ```
@@ -31,7 +31,7 @@ in_order_traversal(root)
      5     30
 
 in_order_traversal(root)
-=> [0, 5, 10, 20, 30] 
+=> [0, 5, 10, 20, 30]
 ```
 
 Use the language of your choosing. We've included starter files for some languages where you can pseudocode, explain your solution and code.
